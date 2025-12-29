@@ -6,7 +6,7 @@
 body {
     font-family: "Montserrat";
     font-size: 24px;
-    background-image: url(/img/bg.png);
+    background-image: url(/img/bg.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 }
 #none { 
     padding:10px;
-    background-image: url(/img/Elka.jpeg);
+    background-image: url(/img/Elka.webp);
     background-position: center;
     background-size: cover;
     border-radius: 7px;
@@ -124,11 +124,13 @@ body {
 .bas {
     border: 3px solid rgb(105, 105, 105);
     border-radius:8px ;
-    background-image: url(/img/minibg.png);
+    background-image: url(/img/minibg.webp);
     background-size: cover;
     opacity: 0.9;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .togglebtn {
     padding:10px;
@@ -174,6 +176,99 @@ body {
     100% {width: 200px;
         height: 60px;
         background-position: inherit;
+    }
+
+}
+@media screen and (max-width: 1020px) {
+    .input { width: 230px;
+            height: 35px;
+            margin-top: 70px;
+            font-size: 32px;
+    }
+    .btn__start {
+        width: 150px;
+        font-size: 22px;
+        left: 370px;
+    }
+    .btn__delete {
+        width: 150px;
+        font-size: 22px;
+        left: 620px;
+    }
+    .text {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .togglebtn {
+        width: 250px;
+        height: 35px;
+        left: 450px
+    }
+    .instruction {
+        margin: 4px;
+        width: 330px;
+        font-size: 14px;
+    }
+    .list {
+        font-size: 24px;
+        padding-left: 50px;
+        margin: 15px;
+    }
+    #none {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .input { width: 240px;
+            height: 32px;
+            margin-top: 40px;
+            font-size: 19px;
+            margin-left: 120px ;
+            margin-right: 120px;
+    }
+    .btn__start {
+        width: 120px;
+        font-size: 13px;
+        left: 180px;
+        top: 480px
+    }
+    .btn__delete {
+        width: 120px;
+        font-size: 13px;
+        left: 180px;
+        top: 530px;
+    }
+    .text {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        max-width: 240px;
+    }
+    .togglebtn {
+        width: 250px;
+        height: 35px;
+        left: 450px;
+        display: none;
+    }
+    .instruction {
+        display: none;
+    }
+    .list {
+        font-size: 16px;
+        padding-left: 30px;
+        margin: 15px;
+    }
+    .bas {
+        max-width: 300px;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 160px;
+    }
+    #none {
+        display: none;
     }
 
 }

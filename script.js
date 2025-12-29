@@ -1,6 +1,7 @@
 let btnStart = document.querySelector(".btn__start")
 let btnEnd = document.querySelector(".btn__delete")
 let btnToggle = document.querySelector(".togglebtn")
+let noneBtn = document.querySelector('#none');
 // Кнопки
 
 let firstInput = document.querySelector(".first")
@@ -36,8 +37,7 @@ function delnumB(event) {
 }
 btnEnd.addEventListener('click', delnumB)
 // Функции очистки и расчета
-
 btnToggle.onclick = () => {
-    let noneBtn = document.querySelector('#none');
-    noneBtn.hidden = !noneBtn.hidden;
+    noneBtn.style.display = 'block'
 }
+noneBtn.style.display = 'none'
