@@ -6,7 +6,7 @@
 body {
     font-family: "Montserrat";
     font-size: 24px;
-    background-image: url(/img/bg.webp);
+    background-image: url(img/bg.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 }
 #none { 
     padding:10px;
-    background-image: url(/img/Elka.webp);
+    background-image: url(img/Elka.webp);
     background-position: center;
     background-size: cover;
     border-radius: 7px;
@@ -124,7 +124,7 @@ body {
 .bas {
     border: 3px solid rgb(105, 105, 105);
     border-radius:8px ;
-    background-image: url(/img/minibg.webp);
+    background-image: url(img/minibg.webp);
     background-size: cover;
     opacity: 0.9;
     margin-bottom: 50px;
