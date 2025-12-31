@@ -226,10 +226,9 @@ body {
     }
     .input { width: 240px;
             height: 32px;
-            margin-top: 40px;
-            font-size: 19px;
-            margin-left: 120px ;
-            margin-right: 120px;
+            margin-top: 43px;
+            font-size: 18px;
+            margin-left: 100px ;
     }
     .btn__start {
         width: 120px;
@@ -247,7 +246,6 @@ body {
         font-size: 15px;
         margin-top: 15px;
         margin-left: 100px;
-        margin-right: 100px;
         max-width: 240px;
     }
     .togglebtn {
@@ -261,14 +259,11 @@ body {
     }
     .list {
         font-size: 16px;
-        padding-left: 30px;
-        margin: 15px;
+        padding-left: 1px;
     }
     .bas {
         max-width: 390px;
-        width: 390px;
-        margin-left: 45px;
-        margin: 90px;
+        width: 350px;
         margin-top: 160px;
     }
     #none {
