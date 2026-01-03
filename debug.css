@@ -1,0 +1,87 @@
+.deinput {
+    border: 3px solid rgb(35, 1, 78);
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    background-color: rgb(242, 235, 253);
+    transition: 0.9s ease;
+    width: 200px;
+}
+.deinp {
+    position: relative;
+}
+.open {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 4px;
+    border: 6px solid rgb(78, 6, 173);;
+    border-radius: 100px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: 0.5s cubic-bezier(.07,.75,.47,1.01);
+}
+.open:hover {
+    transform: translateX(-6px);
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
+.debugMenu {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    height: 73vh;
+    width: 320px;
+    background-color: rgb(247, 244, 250);
+    padding: 40px 30px;
+    border-radius: 18px;
+    border-left: 4px solid rgb(140, 131, 160);
+
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 
+        transform 0.6s cubic-bezier(.25, 1.2, .4, 1), 
+        opacity 0.45s ease;
+        /*Сделал с помощью: https://cubic-bezier.com/  */
+    z-index: 999;
+}
+
+.debugMenu.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+.deinstruction {
+    font-size: 24px;
+    padding-top: 10px;
+    width: 200px;
+}
+.cheat {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.hole {
+    width: 210px;
+    border-radius: 25px;
+}
+.info {
+    font-size: 22px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+@media screen and (max-width:1020px) {
+    .debugMenu {
+        display: none;
+    }
+    .open {
+        transform: translateY(-200%);
+        opacity: 0;
+        
+    }
+}

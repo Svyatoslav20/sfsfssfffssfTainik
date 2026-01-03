@@ -4,28 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="debug.css">
     <title>Веб-прикол! | Новогодний подарок Svyatoslav.Yafarkin</title>
 </head>
 <body>
     <div class="header">
         <p class="instruction">Вкратце: среднее арифметическое...</p>
-        <input class="first input" type="text" placeholder="Число 1:">
-    </div>
-    <div class="center">
-        <input class="second input" type="text" placeholder="Число 2:">
+        <form class="metaform">
+            <input class="first input" type="number" placeholder="Число 1:">
+            <input class="second input" type="number" placeholder="Число 2:">
+            <input class="third input" type="number" placeholder="Число 3:">
+        </form>
     </div>
     <div class="basement">
-        <input class="third input" type="text" placeholder="Число 3:">
         <p class="text">Привет! Введите в эти строки ввода три любых числа, <br>
-         нажимайте кнопку "Отправить", <br>и лицезрейте чудо новогоднее!</p>
-        <button class="btn__start btns">Отправить</button>
-        <button class="btn__delete btns">Удалить</button>
-        <button id="none">Ничего</button>
-        <!-- почетная кнопка!!!! -->
+            нажимайте кнопку "Отправить", <br>и лицезрейте чудо новогоднее!</p>
+            <button class="btn__start btns" type="button">Отправить
+                <img src="img/Send.svg" class="send svg" alt="">
+            </button>
+            <button class="btn__delete btns" type="button">Удалить
+                <img src="img/Delete.svg" class="del svg" alt="">
+            </button>
+            <button id="none">Ничего</button>
+            <!-- почетная кнопка!!!! -->
 
-        <button class="togglebtn">Включить</button>
+            
+            <button class="togglebtn" hidden>Включить</button>
+        </div>
+        <img src="img/CheatMenu.png" class="open">
+        <div class="bas">
+            <div class="consolelog">
+                <p class="console btns">Консоль:
+                    <img src="img/Console.svg" class="svg"  alt="">
+                </p>
+            </div>
+            <div class="tempDiv"></div>
+        </div>
     </div>
-    <div class="bas"></div>
+    
+    <div class="debugMenu">
+        <p class="cheat">Отладка</p>
+        <div class="deinp">
+            <input class="deinput" type="number" placeholder="Введите число" value="3" min="1" max="9999">
+        </div>
+        <p class="deinstruction">Пояснение: <br>
+        Вставьте сюда значение, на которое будет разделен ваш результат суммы трех чисел, знакомых вам в колонке полей вводов.</p>
+        <img src="img/JS.png" class="hole">
+            <p class="info">*Ненастоящая печать*</p>
+    </div>
     <template id = "template">
         <p class="list"></p>
     </template>

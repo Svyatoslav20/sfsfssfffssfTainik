@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- прозрачная заливка -->
+    <linearGradient id="fillUp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.18)"></stop>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.06)"></stop>
+    </linearGradient>
+
+    <!-- внутренняя тень -->
+    <linearGradient id="innerShadowUp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0)"></stop>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.30)"></stop>
+    </linearGradient>
+
+    <!-- мягкая граница -->
+    <filter id="softBorder">
+      <feGaussianBlur stdDeviation="0.9"></feGaussianBlur>
+    </filter>
+  </defs>
+
+  <!-- граница -->
+  <path d="
+    M32 12
+    L50 44
+    L14 44
+    Z" fill="none" stroke="rgba(0,0,0,0.45)" stroke-width="3" stroke-linejoin="round" filter="url(#softBorder)"></path>
+
+  <!-- основа -->
+  <path d="
+    M32 12
+    L50 44
+    L14 44
+    Z" fill="url(#fillUp)" stroke-linejoin="round"></path>
+
+  <!-- внутренняя тень -->
+  <path d="
+    M32 12
+    L50 44
+    L14 44
+    Z" fill="url(#innerShadowUp)" stroke-linejoin="round"></path>
+</svg>

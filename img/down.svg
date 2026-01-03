@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="fillDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.18)"></stop>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.06)"></stop>
+    </linearGradient>
+
+    <linearGradient id="innerShadowDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0)"></stop>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.30)"></stop>
+    </linearGradient>
+
+    <filter id="softBorder">
+      <feGaussianBlur stdDeviation="0.9"></feGaussianBlur>
+    </filter>
+  </defs>
+
+  <!-- граница -->
+  <path d="
+    M14 20
+    L50 20
+    L32 52
+    Z" fill="none" stroke="rgba(0,0,0,0.45)" stroke-width="3" stroke-linejoin="round" filter="url(#softBorder)"></path>
+
+  <!-- основа -->
+  <path d="
+    M14 20
+    L50 20
+    L32 52
+    Z" fill="url(#fillDown)" stroke-linejoin="round"></path>
+
+  <!-- внутренняя тень -->
+  <path d="
+    M14 20
+    L50 20
+    L32 52
+    Z" fill="url(#innerShadowDown)" stroke-linejoin="round"></path>
+</svg>
